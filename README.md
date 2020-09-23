@@ -23,11 +23,11 @@ Using the following commands, install Maven and OpenJDK and verify them. If we a
 ### Environment Varibales - Setup
 
 1. Go to Windows and select Edit the System Environment Variables / Environment Variables / System variables
-1. Set up the system variables as follows and use the versions that you've installed
+2. Set up the system variables as follows and use the versions that you've installed
 - JAVA_HOME = C:\Program Files\OpenJDK\jdk-version folder
 - KAFKA_HOME =  C:\kafka-version folder
 - M2_HOME = C:\ProgramData\chocolatey\lib\maven\apache-maven-version
-1. Path must have the following
+3. Path must have the following
 - %JAVA_HOME%\bin OR C:\Program Files\OpenJDK\jdk-version\bin (or similar, NOT both!)
 - %M2_HOME%\bin
 - %KAFKA_HOME%\bin
@@ -39,11 +39,11 @@ Using the following commands, install Maven and OpenJDK and verify them. If we a
 
 ``` .\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties ```
 
-1. To run Kafka service
+2. To run Kafka service
 
 ``` .\bin\windows\kafka-server-start.bat .\config\server.properties ```
 
-1. To execute create, list and delete commands
+3. To execute create, list and delete commands
 
 ``` .\bin\windows\kafka-topics.bat --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --create --topic fav-marvel-superheroes ```
 
@@ -51,10 +51,10 @@ and
 
 ``` .\bin\windows\kafka-topics.bat --zookeeper localhost:2181 --list ```
 
-1. To run Kafka producer
+4. To run Kafka producer
 
 ``` .\bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic fav-marvel-superheroes ```
 
-1. To run Kafka Consumer
+5. To run Kafka Consumer
 
 ``` .\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic fav-marvel-superheroes --from-beginning ```
