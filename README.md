@@ -15,7 +15,7 @@ Using the following commands, install Maven and OpenJDK and verify them. If we a
 
 ### Installing Kafka
 
-1. To install the latest source tgz file to C:\, go to (Install Kafka)[https://kafka.apache.org/quickstart]
+1. To install the latest source tgz file to C drive, click on [Install-Kafka](https://kafka.apache.org/quickstart)
 1. Un-tar this file using Bash commands
 - tar -xzf <filename>
 - cd <folder>
